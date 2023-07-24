@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Student</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/students}" th:object="${student}">
+    <label for="id">Enter id: </label>
+    <input type="text" th:field="*{id}" id="id"/><br>
+    <label for="name">Enter name: </label>
+    <input type="text" th:field="*{name}" id="name"/><br>
+    <label for="surname">Enter surName: </label>
+    <input type="text" th:field="*{surName}" id="surname"/><br>
+    <label for="age">Enter age: </label>
+    <input type="text" th:field="*{age}" id="age"/><br>
+    <label for="group">Enter group: </label>
+    <input type="text" th:field="*{group}" id="group"/><br>
+    <label for="averageMark">Enter averageMark: </label>
+    <input type="text" th:field="*{averageMark}" id="averageMark"/><br>
+    <input type="submit" value="Create">
+</form>
+</body>
+</html>

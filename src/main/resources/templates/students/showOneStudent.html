@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show One Student</title>
+</head>
+<body>
+<li> Id: <span th:text="${student.getId()}"></span></li>
+
+<li> Name: <span th:text="${student.getName()}"></span></li>
+
+<li> SurName: <span th:text="${student.getSurName()}"></span></li>
+
+<li> Age: <span th:text="${student.getAge()}"></span></li>
+
+<li> AverageMark: <span th:text="${student.getAverageMark()}"></span></li>
+
+<li> Group: <span th:text="${student.getGroup()}"></span></li>
+</body>
+</html>
